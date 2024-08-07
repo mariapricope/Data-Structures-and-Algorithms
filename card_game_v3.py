@@ -203,6 +203,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+    
+// print("Execution Time:  %s seconds." % (time.time() - start_time))
 # Print the execution time of the script only during debugging
 # print("Execution Time:  %s seconds." % (time.time() - start_time))
