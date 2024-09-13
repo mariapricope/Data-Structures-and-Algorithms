@@ -174,10 +174,11 @@ class Game:
         Display the final results of the game.
         """
         print("\nFinal Results:")
-        winner = max(self.players, key=lambda p: p.funds)  # Determine the player with the most funds
+        # Determine the player with the most funds
+        winner = max(self.players, key=lambda p: p.funds)
         for player in self.players:
-            print(f"Player {player.id} has {player.funds} funds")  # Display each player’s funds
-        print(f"Player {winner.id} wins the game with {winner.funds} funds!")  # Announce the overall winner
+            print(f"Player {player.id} has {player.funds} funds")
+        print(f"Player {winner.id} wins the game with {winner.funds} funds!")
 
 
 def main():
@@ -203,7 +204,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-// print("Execution Time:  %s seconds." % (time.time() - start_time))
+
 # Print the execution time of the script only during debugging
 # print("Execution Time:  %s seconds." % (time.time() - start_time))
