@@ -70,7 +70,6 @@ class TestGame(unittest.TestCase):
         except Exception as e:
             self.fail(f"Error during start_game: {e}")
         
-        # Since we are not capturing output, just ensure no errors occur during game play
         self.assertTrue(True)  # Placeholder to pass the test if no exceptions are raised
 
 if __name__ == '__main__':
