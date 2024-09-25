@@ -11,8 +11,14 @@ class Card:
 
         :param suit: The suit of the card (e.g., 'Hearts', 'Diamonds').
         :param value: The value of the card (e.g., '2', 'King').
+        :raises ValueError: If the card value is not valid.
         """
         self.suit = suit
+        valid_values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+        
+        if value not in valid_values:
+            raise ValueError(f"Invalid card value: {value}. Must be one of {valid_values}.")
+        
         self.value = value
 
     def __repr__(self):
